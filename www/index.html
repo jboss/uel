@@ -1,153 +1,127 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.or
-g/TR/html4/loose.dtd">
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="SHORTCUT ICON" href="images/glassfish_favicon.gif">
-        <link rel="stylesheet" type="text/css" href="yui/reset-fonts-grids-min.c
-ss">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Unified Expression Language Community</title>
-    </head>
+<head>
+	<title>Unified Expression Language</title>
+</head>
 <body>
-<h1>Unified Expression Language<br>
-</h1>
-<p>This project provides an implementation of the Unified Expression
-Language (UEL) 1.1.&nbsp; The main goals are<br>
+
+	<style>
+		TABLE.axial { display: none; }
+		#creditfooter { display: none; }
+		
+		.application .directory A {
+			text-decoration: none !important;
+		}
+		.application .directory A:link {
+			text-decoration: none !important;
+		}
+		.directory A:hover {
+			text-decoration: underline;
+			color: black;
+		}
+		.directory .title {
+			color: black;
+			font-weight: bold;
+			font-size: 1.5em;
+		}
+		.directory TD {
+			vertical-align: middle;
+		}
+		.directory .description {
+			color: gray;
+		}
+		.directory .logo {
+			border: 0px;
+			width: 96px;
+			height: 96px;
+			margin-right: 1em;
+		}
+		
+		#feeds {
+			margin: 0px;
+			padding: 0px;
+		}
+		#feeds li {
+			display: inline;
+			list-style-type: none;
+			margin-left: 0.3em;
+			margin-right: 1em;
+			padding-left: 16px;
+			background-image: url(images/feed-icon.png);
+			background-position: left middle;
+			background-repeat: no-repeat;
+		}
+		
+		.footer {
+			display:none;
+		}
+	</style>
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/GlassFish-Webtier"/>
+
+<div style="float: right; text-align:center">
+	<!--
+	<div style="margin-top: 1em; font-size: 1.5em;" id="downloadBox">
+	  <a href="/1.2/">
+	  <img src="1.2/download.png" style="vertical-align: middle;" border="0">
+	  </a>
+
+	</div>
+	-->
+	
+	<div style="margin-top: 3em;">
+		<ul id="feeds">
+			<li><a href="http://feeds.feedburner.com/GlassFish-Webtier">Blog</a>
+			</li><li><a href="https://jstl.dev.java.net/servlets/ProjectRSS?type=news">Releases</a>
+		</li></ul>
+	</div>
+
+</div>
+
+<ul>
+<li><strong>Licenses:</strong> <a href="https://glassfish.dev.java.net/public/CDDL+GPL.html">Common Development and Distribution License (CDDL) version 1.0 + GNU General Public License (GPL) version 2</a></li>
+<li><strong>Governance:</strong> <a href="https://glassfish.dev.java.net/public/GovernancePolicy.html">Same as Project GlassFish</a></li>
+</ul>
+
+<div style="margin: 1em;">
+This project provides an implementation of the Expression Language (EL). 
+The main goals are<br>
 </p>
 <ul>
-  <li>Improve current implementation: bug fixes and performance
+  <li>Improves current implementation: bug fixes and performance
 improvements</li>
   <li>Provides API for use by other tools, such as Netbeans</li>
 </ul>
-<br>
-<table width="100%">
-  <tbody>
-    <tr>
-      <td valign="top">
-      <table>
-        <tbody>
-          <tr>
-            <td>
-            <table>
-              <tbody>
-                <tr>
-                  <td valign="top"> <a href="getStarted.html"><img
- src="images/communities.gif" bor=""></a></td>
-                  <td>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td> <b><a href="getStarted.html">Get
-Started</a></b><br>
-Learn about UEL 1.1 <br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br/>
-            <table>
-              <tbody>
-                <tr>
-                  <td valign="top"> <a href="downLoad.html"><img
- src="images/download.jpg" bor="" der="0"></a></td>
-                  <td>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td> <b><a href="downLoad.html">Download</a></b><br>
-                           Download the latest UEL implementation 
-                           and run with a JavaEE 5 container.
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br/>
-            <table>
-              <tbody>
-                <tr>
-                  <td valign="top"> <a href="getInvolved.html"><img
- src="images/srcbrowse.gif" bor="" der="0"></a></td>
-                  <td>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td> <b><a href="getInvolved.html">Get Involved</a></b><br>
-                           Help improve UEL implementation by providing
-                           feedbacks and filing bugs.  Those interested in code
-                           contribution, can set up a workspace for
-                           <a href="build.html">building</a> and
-                           <a href="test.html">testing</a>.<br/>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table>
-              <tbody>
-                <tr>
-                  <td valign="top"> <a href="https://glassfish.dev.java.net/public/CDDL+GPL.html"><img
- src="images/success.gif" bor="" der="0"></a></td>
-                  <td>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td> <b><a href="https://glassfish.dev.java.net/public/CDDL+GPL.html">License</a></b><br>
-			   The UEL project  uses the same <a
-                            href="https://glassfish.dev.java.net/public/CDDL+GPL.html">CDDL+GPL License</a> as
-                            GlassFish.
+	
+</div>
 
-                           <br/>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br/>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-      <td rowspan="3" style="padding-top:15px;padding-left:10px">
-        <div class="right_block">
-        <p class="tasknav">
-          <strong>Useful Links</strong><br/>
-          &#8226;
-<a
-href="http://jcp.org/aboutJava/communityprocess/maintenance/jsr245/245-MR1.html">UEL 1.1 specification</a>
-        <br/><br/>
-          <strong>Related Projects</strong><br/>
-                        &#8226;
-          <a href="https://glassfish.dev.java.net">Glassfish</a>
-          <br/>
-                        &#8226;
-          <a href="https://javaserverfaces.dev.java.net">JSF Implementation</a>
-          <br/>
-                        &#8226;
-          <a href="https://jsp.dev.java.net">JSP Implementation</a>
-          <br/>
-         </p>
-        </div>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<br>
-<br>
+<div align="center">
+	<table valign="middle" class="directory">
+		<tbody><tr>
+			<td><a href="/getStarted.html"><img src="images/discover.gif" class="logo"></a></td>
+			<td><a href="/getStarted.html">
+			<div class="title">Get Started</div>
+			<div class="description">Find out what EL is and get started.</div>
+			</a></td>
+		</tr>
+		<tr>
+			<td><a href="/download.html"><img src="images/download.png" class="logo"></a></td>
+
+			<td><a href="/download.html">
+			<div class="title">Download EL</div>
+			<div class="description">Get the latest version
+			of EL</div>
+			</a></td>
+		</tr>
+		<tr>
+			<td><a href="/getInvolved.html"><img src="images/extend.gif" class="logo"></a></td>
+			<td><a href="/getInvolved.html">
+
+			<div class="title">Get Involved</div>
+			<div class="description">Learn how to build/use EL.</div>
+			</a></td>
+		</tr>
+	</tbody></table>
+</div>
+</div>
 </body>
 </html>
+
