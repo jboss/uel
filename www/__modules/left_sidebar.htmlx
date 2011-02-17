@@ -33,7 +33,6 @@
 <script>
 var info = {
 	title: "Expression Language",
-	logo: "http://uel.java.net/images/glassfish_logo.gif"
 }
 </script>
 <script src="http://glassfish-theming.java.net/zone-webtier.js"></script>
