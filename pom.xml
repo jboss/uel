@@ -51,7 +51,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.glassfish</groupId>
     <artifactId>javax.el</artifactId>
-    <version>3.0.1-b08-jbossorg-3-SNAPSHOT</version>
+    <version>3.0.1-b08-jbossorg-3</version>
     <packaging>pom</packaging>
     <name>Expression Language 3.0</name>
 
@@ -95,7 +95,7 @@
         <connection>scm:git:https://github.com/jboss/uel.git</connection>
         <developerConnection>scm:git:https://github.com/jboss/uel.git</developerConnection>
         <url>https://github.com/jboss/uel.git</url>
-        <tag>HEAD</tag>
+        <tag>3.0.1-b08-jbossorg-3</tag>
     </scm>
 
     <developers>
